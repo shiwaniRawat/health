@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.gb.health.PhoneActivity"
+    android:padding="12dp"
+    android:paddingTop="12dp"
+    android:paddingRight="12dp"
+    android:paddingEnd="12dp"
+    android:paddingLeft="12dp"
+    android:paddingStart="12dp">
+
+
+    <EditText
+        android:id="@+id/editText_Phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:digits="0123456789"
+        android:ems="10"
+        android:hint="Enter Phone"
+        android:inputType="phone"/>
+   <Button
+        android:id="@+id/btn_get_verification_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_Phone"
+        android:text="Get Verification Code"
+        android:textAllCaps="false"
+        />
+    <EditText
+        android:id="@+id/edittextcode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:digits="0123456789"
+        android:hint="Enter received code"
+        android:inputType="number"
+        android:layout_below="@id/btn_get_verification_code"/>
+    <Button
+        android:id="@+id/btn_verification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:layout_below="@id/edittextcode"/>
+
+</RelativeLayout>
